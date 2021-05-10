@@ -1,0 +1,13 @@
+#!/bin/bash
+
+path=""
+depvalid="config/installed.txt"
+
+if [ -e $depvalid ]
+then
+	python3 $path"core/gui.py"
+else
+	pip3 install -r $path"config/requirements.txt"
+	touch $depvalid
+	python3 $path"core/gui.py"
+fi
