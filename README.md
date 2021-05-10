@@ -2,7 +2,7 @@
 
 An anonymized browser, thanks to the implementation of the Tor proxy. It allows the creation of a hidden service on the Tor network (in .onion) as well as the indexing of this one with an updated file and shared in peer-to-peer in real time.
 
-[TOC]
+
 
 **DISCLAIMER: THIS PROJECT IS FOR ACADEMIC PURPOSES ONLY. THE DEVELOPERS TAKE NO RESPONSIBILITY FOR ILLEGAL USAGE AND/OR POTENTIAL HARMS.**
 
@@ -101,4 +101,4 @@ Bug reports and pull requests are welcome on GitHub repository at https://github
 
 ## Licence
 
-[GPL-3.0 License](https://github.com/decentralizeme/lemontunnel/blob/main/LICENSE) > open-source
+[BSD-3-Clause License](https://github.com/decentralizeme/lemonrouter/blob/main/LICENSE) > open-source
