@@ -40,6 +40,8 @@ def verifySys():
         """)
         exit()
 
+#connect to tor proxy
+
 class MainWindow(QMainWindow):
     def __init__(self):
         super(MainWindow, self).__init__()
@@ -74,7 +76,7 @@ class MainWindow(QMainWindow):
         dom_btn = QAction('Dom', self)
         dom_btn.triggered.connect(self.website)
         navbar.addAction(dom_btn)
-        #btn0
+        #btn5
         ip_btn = QAction(ip, self)
         ip_btn.triggered.connect(self.my_ip)
         navbar.addAction(ip_btn)

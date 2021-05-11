@@ -1,4 +1,4 @@
 import requests
 
-ipdata = requests.get('https://ifconfig.me')
+ipdata = requests.get('https://api.ipify.org')
 ip = ipdata.text
