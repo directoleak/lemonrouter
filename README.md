@@ -48,7 +48,7 @@ You can use git to clone this project or download .zip file from GitHub reposito
 
 ##### Concept explanations:
 
-The Lemon Router networks use the [peer-to-peer](https://en.wikipedia.org/wiki/Peer-to-peer) protocol to share a common file with each client which will serve as their [DNS resolver](https://fr.wikipedia.org/wiki/Domain_Name_System). This file is updated each time a hidden service is created via the Lemon Router client. The addresses are generated thanks to the implementation of [Tor ](https://en.wikipedia.org/wiki/Tor_(anonymity_network)) (ipv4 or ipv6 ending in .onion), the navigation is completely anonymous and allows [access to hidden services](https://en.wikipedia.org/wiki/The_Hidden_Wiki) as well as their indexing.
+The Lemon Router networks use the [peer-to-peer](https://en.wikipedia.org/wiki/Peer-to-peer) protocol to share a common file with each client which will serve as their [DNS resolver](https://en.wikipedia.org/wiki/Domain_Name_System). This file is updated each time a hidden service is created via the Lemon Router client. The addresses are generated thanks to the implementation of [Tor ](https://en.wikipedia.org/wiki/Tor_(anonymity_network)) (ipv4 or ipv6 ending in .onion), the navigation is completely anonymous and allows [access to hidden services](https://en.wikipedia.org/wiki/The_Hidden_Wiki) as well as their indexing.
 
 Peers: ...
 
@@ -97,7 +97,7 @@ Bug reports and pull requests are welcome on GitHub repository at https://github
 3. Easy and simple graphical experience
 4. Readable code and commented if possible
 5. Fewer external calls slowing down the software
-6. Easy-to-navigate on the clearnet,deep web and darknet
+6. Easy-to-navigate on the clearnet, deep web and darknet
 
 ## Licence
 

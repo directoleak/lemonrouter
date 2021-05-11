@@ -96,7 +96,11 @@ class MainWindow(QMainWindow):
 
     def navigate_to_url(self):
         url = self.url_bar.text()
-        self.browser.setUrl(QUrl(url))
+        if "https://" in url or "http://" in url:
+            self.browser.setUrl(QUrl(url))
+        else:
+            newsecureurl = f"https://{url}"
+            self.browser.setUrl(QUrl(newsecureurl))
 
     def update_url(self, q):
         self.url_bar.setText(q.toString())
