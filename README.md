@@ -12,6 +12,8 @@ An anonymized browser, thanks to the implementation of the Tor proxy. It allows 
   - PyQt5
   - PyQt5-sip
   - PyQtWebEngine
+- Tor proxy
+- Nginx
 
 ## Features
 
