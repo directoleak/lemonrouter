@@ -101,8 +101,15 @@ class MainWindow(QMainWindow):
         if "https://" in url or "http://" in url:
             self.browser.setUrl(QUrl(url))
         else:
-            newsecureurl = f"https://{url}"
-            self.browser.setUrl(QUrl(newsecureurl))
+            validurl = url.split(".")
+            if len(validurl) > 1:
+                if " " not in url:
+                    newsecureurl = f"https://{url}"
+                    self.browser.setUrl(QUrl(newsecureurl))
+                else:
+                    self.browser.setUrl(QUrl("https://duckduckgo.com/?q="+url))
+            else:
+                self.browser.setUrl(QUrl("https://duckduckgo.com/?q="+url))
 
     def update_url(self, q):
         self.url_bar.setText(q.toString())
