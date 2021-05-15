@@ -29,7 +29,7 @@ An anonymized browser, thanks to the implementation of the Tor proxy. It allows 
 
 #### Install requirements
 
-#### Ubuntu & Debian :
+#### --- Ubuntu & Debian ---
 
 ##### 1. Get Python >= 3
 
@@ -39,7 +39,7 @@ An anonymized browser, thanks to the implementation of the Tor proxy. It allows 
 ~# sudo apt-get install python3
 ```
 
-#### Ubuntu :
+#### --- Ubuntu ---
 
 ##### 2. Get Nginx
 
@@ -47,12 +47,9 @@ An anonymized browser, thanks to the implementation of the Tor proxy. It allows 
 
 ```shell
 ~# sudo apt install curl gnupg2 ca-certificates lsb-release
-~# echo "deb http://nginx.org/packages/ubuntu `lsb_release -cs` nginx" \
-    | sudo tee /etc/apt/sources.list.d/nginx.list
-~# echo "deb http://nginx.org/packages/mainline/ubuntu `lsb_release -cs` nginx" \
-    | sudo tee /etc/apt/sources.list.d/nginx.list
-~# echo -e "Package: *\nPin: origin nginx.org\nPin: release o=nginx\nPin-Priority: 900\n" \
-    | sudo tee /etc/apt/preferences.d/99nginx
+~# echo "deb http://nginx.org/packages/ubuntu `lsb_release -cs` nginx" | sudo tee /etc/apt/sources.list.d/nginx.list
+~# echo "deb http://nginx.org/packages/mainline/ubuntu `lsb_release -cs` nginx" | sudo tee /etc/apt/sources.list.d/nginx.list
+~# echo -e "Package: *\nPin: origin nginx.org\nPin: release o=nginx\nPin-Priority: 900\n" | sudo tee /etc/apt/preferences.d/99nginx
 ~# curl -o /tmp/nginx_signing.key https://nginx.org/keys/nginx_signing.key
 ~# gpg --dry-run --quiet --import --import-options show-only /tmp/nginx_signing.key
 ~# gpg --with-fingerprint /tmp/nginx_signing.key #for ubuntu 16.04
@@ -61,7 +58,7 @@ An anonymized browser, thanks to the implementation of the Tor proxy. It allows 
 ~# sudo apt-get install nginx
 ```
 
-#### Debian :
+#### --- Debian ---
 
 ##### 2. Get Nginx
 
@@ -69,12 +66,9 @@ An anonymized browser, thanks to the implementation of the Tor proxy. It allows 
 
 ```shell
 ~# sudo apt install curl gnupg2 ca-certificates lsb-release
-~# echo "deb http://nginx.org/packages/debian `lsb_release -cs` nginx" \
-    | sudo tee /etc/apt/sources.list.d/nginx.list
-~# echo "deb http://nginx.org/packages/mainline/debian `lsb_release -cs` nginx" \
-    | sudo tee /etc/apt/sources.list.d/nginx.list
-~# echo -e "Package: *\nPin: origin nginx.org\nPin: release o=nginx\nPin-Priority: 900\n" \
-    | sudo tee /etc/apt/preferences.d/99nginx
+~# echo "deb http://nginx.org/packages/debian `lsb_release -cs` nginx" | sudo tee /etc/apt/sources.list.d/nginx.list
+~# echo "deb http://nginx.org/packages/mainline/debian `lsb_release -cs` nginx" | sudo tee /etc/apt/sources.list.d/nginx.list
+~# echo -e "Package: *\nPin: origin nginx.org\nPin: release o=nginx\nPin-Priority: 900\n" | sudo tee /etc/apt/preferences.d/99nginx
 ~# curl -o /tmp/nginx_signing.key https://nginx.org/keys/nginx_signing.key
 ~# gpg --dry-run --quiet --import --import-options import-show /tmp/nginx_signing.key
 ~# sudo mv /tmp/nginx_signing.key /etc/apt/trusted.gpg.d/nginx_signing.asc
@@ -82,7 +76,7 @@ An anonymized browser, thanks to the implementation of the Tor proxy. It allows 
 ~# sudo apt-get install nginx
 ```
 
-#### Ubuntu & Debian :
+#### --- Ubuntu & Debian ---
 
 ##### 3. Get Tor Proxy
 
