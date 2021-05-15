@@ -19,13 +19,80 @@ An anonymized browser, thanks to the implementation of the Tor proxy. It allows 
 
 - [x] Graphic interface
 - [ ] Proxy through Tor
-- [ ] Hidden service self-hosted
+- [x] Hidden service self-hosted
 - [ ] Indexing of hidden services
 - [ ] Monitoring tool
 
 ## Installation (development)
 
 ### Linux :
+
+#### Install requirements
+
+#### Ubuntu & Debian :
+
+##### 1. Get Python >= 3
+
+> --> https://www.python.org/
+
+```shell
+~# sudo apt-get install python3
+```
+
+#### Ubuntu :
+
+##### 2. Get Nginx
+
+> --> https://nginx.org/
+
+```shell
+~# sudo apt install curl gnupg2 ca-certificates lsb-release
+~# echo "deb http://nginx.org/packages/ubuntu `lsb_release -cs` nginx" \
+    | sudo tee /etc/apt/sources.list.d/nginx.list
+~# echo "deb http://nginx.org/packages/mainline/ubuntu `lsb_release -cs` nginx" \
+    | sudo tee /etc/apt/sources.list.d/nginx.list
+~# echo -e "Package: *\nPin: origin nginx.org\nPin: release o=nginx\nPin-Priority: 900\n" \
+    | sudo tee /etc/apt/preferences.d/99nginx
+~# curl -o /tmp/nginx_signing.key https://nginx.org/keys/nginx_signing.key
+~# gpg --dry-run --quiet --import --import-options show-only /tmp/nginx_signing.key
+~# gpg --with-fingerprint /tmp/nginx_signing.key #for ubuntu 16.04
+~# sudo mv /tmp/nginx_signing.key /etc/apt/trusted.gpg.d/nginx_signing.asc
+~# sudo apt-get update
+~# sudo apt-get install nginx
+```
+
+#### Debian :
+
+##### 2. Get Nginx
+
+> --> https://nginx.org/
+
+```shell
+~# sudo apt install curl gnupg2 ca-certificates lsb-release
+~# echo "deb http://nginx.org/packages/debian `lsb_release -cs` nginx" \
+    | sudo tee /etc/apt/sources.list.d/nginx.list
+~# echo "deb http://nginx.org/packages/mainline/debian `lsb_release -cs` nginx" \
+    | sudo tee /etc/apt/sources.list.d/nginx.list
+~# echo -e "Package: *\nPin: origin nginx.org\nPin: release o=nginx\nPin-Priority: 900\n" \
+    | sudo tee /etc/apt/preferences.d/99nginx
+~# curl -o /tmp/nginx_signing.key https://nginx.org/keys/nginx_signing.key
+~# gpg --dry-run --quiet --import --import-options import-show /tmp/nginx_signing.key
+~# sudo mv /tmp/nginx_signing.key /etc/apt/trusted.gpg.d/nginx_signing.asc
+~# sudo apt-get update
+~# sudo apt-get install nginx
+```
+
+#### Ubuntu & Debian :
+
+##### 3. Get Tor Proxy
+
+> --> https://torproject.org
+
+```shell
+~# sudo apt-get install tor
+```
+
+
 
 #### Setting up the environment
 
