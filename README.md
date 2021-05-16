@@ -6,6 +6,8 @@ An anonymized browser, thanks to the implementation of the Tor proxy. It allows 
 
 **DISCLAIMER: THIS PROJECT IS FOR ACADEMIC PURPOSES ONLY. THE DEVELOPERS TAKE NO RESPONSIBILITY FOR ILLEGAL USAGE AND/OR POTENTIAL HARMS.**
 
+------
+
 ## Requirements
 
 - Python >= 3
@@ -33,7 +35,7 @@ An anonymized browser, thanks to the implementation of the Tor proxy. It allows 
 
 ##### 1. Get Python >= 3
 
-> --> https://www.python.org/
+> --> https://www.python.org
 
 ```shell
 ~# sudo apt-get install python3
@@ -43,7 +45,7 @@ An anonymized browser, thanks to the implementation of the Tor proxy. It allows 
 
 ##### 2. Get Nginx
 
-> --> https://nginx.org/
+> --> https://nginx.org
 
 ```shell
 ~# sudo apt install curl gnupg2 ca-certificates lsb-release
@@ -62,7 +64,7 @@ An anonymized browser, thanks to the implementation of the Tor proxy. It allows 
 
 ##### 2. Get Nginx
 
-> --> https://nginx.org/
+> --> https://nginx.org
 
 ```shell
 ~# sudo apt install curl gnupg2 ca-certificates lsb-release
@@ -142,6 +144,8 @@ Nodes: ...
 #soon
 ```
 
+------
+
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub repository at https://github.com/decentralizeme/lemonrouter. This project is intended to be a safe and welcoming space for collaboration, and contributors must adhere to the [contributors code of conduct](https://www.contributor-covenant.org/).
@@ -162,6 +166,9 @@ Bug reports and pull requests are welcome on GitHub repository at https://github
 5. Fewer external calls slowing down the software
 6. Easy-to-navigate on the clearnet, deep web and darknet
 
-## Licence
+## License
 
-[BSD-3-Clause License](https://github.com/decentralizeme/lemonrouter/blob/main/LICENSE) > open-source
+Lemon Router  is released under the BSD-3-Clause License. You can find the full license text in the [LICENSE](https://github.com/decentralizeme/lemonrouter/blob/main/LICENSE) file.
+
+------
+
